@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'mono', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: black;
+    border-bottom: 1px solid #b6895b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: #b6895b;
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #b6895b;
+}
+
+/* index.html */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.hero .content h1 span {
+    color: #b6895b;
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+/* profil.html */
+.profil,
+.produk,
+.saran {
+    padding: 8rem 7% 1.4rem;
+}
+
+.profil h2,
+.produk h2,
+.saran h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.profil h2 span,
+.produk h2 span,
+.saran h2 span {
+    color: #b6895b;
+}
+
+.profil .row {
+    display: flex;
+}
+
+.profil .row .profil-img {
+    flex: 1 1 45;
+}
+
+.profil .row .profil-img img {
+    width: 100%;
+}
+
+.profil .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.profil .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.profil .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* Produk.html */
+.produk h2, 
+.saran h2 {
+    margin-bottom: 1rem;
+}
+
+.produk p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.produk .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.produk .row .produk-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.produk .row .produk-card img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.produk .row .produk-card .produk-card-title {
+    margin: 1rem auto 0.5rem;
+}
+
+footer {
+    background-color: black;
+    border-top: 1px solid #b6895b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
